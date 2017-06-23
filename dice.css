@@ -15,7 +15,7 @@ img {
 	left: calc(50% - 125px);
 	top:  calc(50% - 125px);
 }
-.anim {
+.a {
     animation: a 1s;
 }
 @keyframes a {
