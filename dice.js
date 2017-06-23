@@ -3,7 +3,7 @@ a.load();
 function b() {
     var d = Math.ceil(Math.random() * 6);
     $.setAttribute("class", "");
-    $.src = 'img/' + d + 't.png';
+    $.src = 'img/' + d + '.png';
 }
 function c() {
     if (!$.getAttribute('class').includes('a')) {
