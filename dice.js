@@ -1,4 +1,4 @@
-var $ = document.querySelector('img'), a = new Audio('a/roll.mp3');
+var $ = document.querySelector('img'), a = new Audio('a/r.mp3');
 a.load();
 function b() {
     var d = Math.ceil(Math.random() * 6);
