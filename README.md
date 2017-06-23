@@ -9,6 +9,10 @@ Why roll it if you can throw it?
 - Lovely sound effects
 - No ads!! No in app purchases or cost!!
 
+# How to
+1. Open up <http://cameronsamuels.com/dicethrower> to start using it
+2. Click anywhere, press any key, or shake your phone to throw the dice
+
 # Apps
 You can download Dice Thrower for Chrome and Android. You can use it online anywhere. Soon there will be an iOS app and a Firefox extension. Possibly a Windows and Amazon Fire OS app.
 
