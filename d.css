@@ -5,13 +5,17 @@ html, body {
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	cursor: pointer;
 	background: #eee;
+	overflow: hidden;
 }
 img {
-	height: 250px;
-	width: 250px;
+	height: 80vh;
+	width: 80vw;
 	position: absolute;
-	left: calc(50% - 125px);
-	top:  calc(50% - 125px);
+	left: 0;
+	top: 0;
+	margin: auto;
+	bottom: 0;
+	right: 0;
 }
 .a { animation: a 1s }
 @keyframes a {
