@@ -6,8 +6,8 @@ function b() {
     $.src = 'img/' + d + 't.png';
 }
 function c() {
-    if (!$.getAttribute('class').includes('anim')) {
-        $.setAttribute('class', 'anim');
+    if (!$.getAttribute('class').includes('a')) {
+        $.setAttribute('class', 'a');
         a.play();
         setTimeout('update()', 1000);
     }
