@@ -15,13 +15,11 @@ img {
 	left: calc(50% - 125px);
 	top:  calc(50% - 125px);
 }
-.a {
-    animation: a 1s;
-}
+.a { animation: a 1s }
 @keyframes a {
-    0% { transform: rotate(0deg); }
-    25% { transform: rotate(95deg); }
-    50% { transform: rotate(180deg); }
-    75% { transform: rotate(-95deg); }
-    100% { transform: rotate(0deg); }
+    0% { transform: rotate(0deg) }
+    25% { transform: rotate(95deg) }
+    50% { transform: rotate(180deg) }
+    75% { transform: rotate(-95deg) }
+    100% { transform: rotate(0deg) }
 }
