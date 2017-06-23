@@ -1,13 +1,13 @@
-var $ = function(e) { return document.getElementById(e) }, a = new Audio('roll.mp3');
+var $ = document.querySelector('img'), a = new Audio('roll.mp3');
 a.load();
 function b() {
     var d = Math.ceil(Math.random() * 6);
-    $("dice").setAttribute("class", "");
-    $('dice').src = 'img/' + d + 't.png';
+    $.setAttribute("class", "");
+    $.src = 'img/' + d + 't.png';
 }
 function c() {
-    if (!$('dice').getAttribute('class').includes('anim')) {
-        $('dice').setAttribute('class', 'anim');
+    if (!$.getAttribute('class').includes('anim')) {
+        $.setAttribute('class', 'anim');
         a.play();
         setTimeout('update()', 1000);
     }
