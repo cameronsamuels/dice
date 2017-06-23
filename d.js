@@ -13,6 +13,5 @@ function c() {
     }
 }
 if (!navigator.userAgent.match(/Android/i) && !navigator.userAgent.match(/iPhone|iPad|iPod/i)) document.onclick = c;
-document.onkeydown = c;
-document.ontouchmove = function(e){e.preventDefault()};
-b();
+document.onkeydown = c, document.ontouchmove = function(e){e.preventDefault()};
+b()
