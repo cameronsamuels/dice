@@ -8,7 +8,7 @@ html, body {
 	cursor: pointer;
 	background: #eee;
 }
-#dice {
+img {
 	height: 250px;
 	width: 250px;
 	position: absolute;
@@ -16,8 +16,7 @@ html, body {
 	top:  calc(50% - 125px);
 }
 .anim {
-    animation-name: anim;
-    animation-duration: 1s;
+    animation: anim 1s;
 }
 @keyframes anim {
     0% { transform: rotate(0deg); }
