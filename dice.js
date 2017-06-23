@@ -12,7 +12,7 @@ function c() {
         setTimeout('update()', 1000);
     }
 }
-if (!navigator.userAgent.match(/Android/i) && !navigator.userAgent.match(/iPhone|iPad|iPod/i)) document.body.onclick = c;
-document.body.onkeydown = c;
-document.body.ontouchmove = function(e){e.preventDefault()};
+if (!navigator.userAgent.match(/Android/i) && !navigator.userAgent.match(/iPhone|iPad|iPod/i)) document.onclick = c;
+document.onkeydown = c;
+document.ontouchmove = function(e){e.preventDefault()};
 b();
