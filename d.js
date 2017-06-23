@@ -2,12 +2,12 @@ var $ = document.querySelector('img'), a = new Audio('a/r.mp3');
 a.load();
 function b() {
     var d = Math.ceil(Math.random() * 6);
-    $.setAttribute("class", "");
+    $.className = "";
     $.src = 'a/' + d + '.svg';
 }
 function c() {
-    if (!$.getAttribute('class').includes('a')) {
-        $.setAttribute('class', 'a');
+    if (!$.className) {
+        $.className = 'a';
         a.play();
         setTimeout(b, 1000);
     }
