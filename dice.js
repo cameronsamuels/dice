@@ -9,7 +9,7 @@ function c() {
     if (!$.getAttribute('class').includes('a')) {
         $.setAttribute('class', 'a');
         a.play();
-        setTimeout('b()', 1000);
+        setTimeout(b, 1000);
     }
 }
 if (!navigator.userAgent.match(/Android/i) && !navigator.userAgent.match(/iPhone|iPad|iPod/i)) document.onclick = c;
