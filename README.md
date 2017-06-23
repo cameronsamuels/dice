@@ -3,8 +3,7 @@ Why roll it if you can throw it?
 
 # Features
 - Amusing animations
-- High-res graphics (soon)
-- Beautiful backgrounds (for now)
+- High-res graphics
 - Keyboard press or mouse click to throw
 - Lovely sound effects
 - No ads!! No in app purchases or cost!!
