@@ -1,12 +1,12 @@
 html, body {
 	margin: 0;
 	height: 100%;
-	color: #fff;
-	transition: background-color 1s;
+	color: #555;
 	-webkit-user-select: none;
 	user-select: none;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	cursor: pointer;
+	background: #eee;
 }
 #dice {
 	height: 250px;
@@ -15,21 +15,6 @@ html, body {
 	left: calc(50% - 125px);
 	top:  calc(50% - 125px);
 }
-#info {
-    padding: 10px;
-    border: 1px white solid;
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
-    text-align: center;
-}
-dv {
-    width: 90%;
-    border-top: 1px white solid;
-    display: inline-block;
-    height: 0px;
-}
-@media screen and (max-height: 400px) { #info { display: none }}
 .anim {
     animation-name: anim;
     animation-duration: 1s;
