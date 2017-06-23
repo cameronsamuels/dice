@@ -21,4 +21,4 @@ Also you may fork this repo and submit a pull request (PR). I will love your cod
 Made by [Cameron Samuels](http://cameronsamuels.com).
 
 # License
-Dice Thrower is licensed under the MIT License.
+Dice Thrower is licensed under the [MIT License](LICENSE).
