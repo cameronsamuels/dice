@@ -1,0 +1,1 @@
+function b(){var a=Math.ceil(6*Math.random());$.className="",$.src="a/"+a+".svg"}function c(){$.className||($.className="a",a.play(),setTimeout(b,1e3))}var $=document.querySelector("img"),a=new Audio("r.mp3");document.onkeydown=c,document.onclick=c,b()
