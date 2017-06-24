@@ -7,7 +7,7 @@ Why roll it if you can throw it?
 - Keyboard press or mouse click to throw
 - Lovely sound effects
 - No ads!! No in app purchases or cost!!
-- Nice looking styling
+- Nice looking style
 
 # How to
 1. Open up <http://cameronsamuels.com/dicethrower> to start using the app
