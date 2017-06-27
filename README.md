@@ -1,5 +1,5 @@
 # Dice Thrower
-Why roll it if you can throw it?
+Why roll it if you can throw it? A dice throwing app with a purpose.
 
 # Features
 - Amusing animations
@@ -7,7 +7,7 @@ Why roll it if you can throw it?
 - Keyboard press or mouse click to throw
 - Lovely sound effects
 - No ads!! No in app purchases or cost!!
-- Nice looking style
+- Nice looking futuristic style
 
 # How to
 1. Open up <http://cameronsamuels.com/dicethrower> to start using the app
