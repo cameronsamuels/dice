@@ -17,7 +17,7 @@ Why roll it if you can throw it? A dice throwing app with a purpose.
 You can download Dice Thrower for [Chrome](https://goo.gl/knfd3k) and [Android](https://goo.gl/WicJwf). You can use it online anywhere on any device. Soon there will be an iOS app and a Firefox extension. Possibly a Windows and Amazon Fire OS app later.
 
 # Contributing
-Please open issues if you have a suggestion, bug, or something else that needs to be changed or improved. I will love to make my app the best it could be.
+For feedback, bug reports, crash reports, ideas, or other reasons, open an issue at <https://goo.gl/KqvQyz>. I will love to make my app the best it could be.
 
 Also you may fork this repo and submit a pull request (PR). I will love your code in my app.
 
