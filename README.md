@@ -28,4 +28,4 @@ Made by [Cameron Samuels](http://cameronsamuels.com).
 I used [Assembly](http://assemblyapp.co) and [Pixlr Editor](http://pixlr.com/editor) for the graphics. I used sound bible for the sound effects.
 
 # License
-Dice Thrower is licensed under the [MIT License](LICENSE), but has been modified to restrict selling, and sublicensing. All rights reserved for the code and graphics.
+Dice Thrower is licensed under the [MIT License](LICENSE), but has been modified to restrict selling, publication, distribution, and sublicensing. All rights reserved for the code and graphics.
