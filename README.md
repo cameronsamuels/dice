@@ -14,7 +14,7 @@ Why roll it if you can throw it? A dice throwing app with a purpose.
 2. Click anywhere or press any key on your keyboard to throw the dice
 
 # Apps
-You can download Dice Thrower for [Chrome](https://goo.gl/knfd3k) and [Android](https://goo.gl/ZfrqTG). You can use it online anywhere on any device. Soon there will be an iOS app and a Firefox extension. Possibly a Windows and Amazon Fire OS app later.
+You can download Dice Thrower for [Chrome](https://goo.gl/knfd3k) and [Android](https://goo.gl/ZfrqTG). You can use it online anywhere on any device.
 
 # Contributing
 For feedback, bug reports, crash reports, ideas, or other reasons, open an issue at <https://git.io/vQ8OV>. I will love to make my app the best it could be.
