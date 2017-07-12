@@ -1,1 +1,1 @@
-{"manifest_version":2,"name":"Dice Thrower","description":"Why roll it if you can throw it?","version":"2.1","icons":{"128":"b.png"},"browser_action":{"default_popup":"index.html"}}
+{"manifest_version":2,"name":"Dice Thrower","description":"Why roll it if you can throw it?","version":"2.1","icons":{"128":"b.png"},"browser_action":{"default_popup":"index.html","default_icon":"b.png"}}
