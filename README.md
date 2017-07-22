@@ -15,10 +15,10 @@ You can download Dice Thrower for [Chrome](https://goo.gl/knfd3k), [Firefox](htt
 # Contributing
 For feedback, bug reports, crash reports, ideas, or other reasons, open an issue at <https://git.io/vQ8OV>. I will love to make my app the best it could be.
 
-Also you may fork this repo and submit a pull request (PR). I will love your code in my app.
+Also you may fork this repo and submit a PR (pull request). I will love your code in my app.
 # About
 Made by [Cameron Samuels](http://cameronsamuels.com).
 ### Tools
 I used [Assembly](http://assemblyapp.co) and [Pixlr Editor](http://pixlr.com/editor) for the graphics. I used [SoundBible](http://soundbible.com/) for the sound effects.
 ### License
-Dice Thrower is licensed under the [Cameron Samuels v2 License](LICENSE). All rights reserved for the graphics.
+Dice Thrower is licensed under the [Cameron Samuels v2 License](LICENSE). All rights reserved for the dice images.
