@@ -1,0 +1,1 @@
+function b(){var a=Math.ceil(6*Math.random());$.className="",$.src=a+".svg"}function c(e){$.className||($.className="a",setTimeout(b,1e3))}var $=document.querySelector("img");document.ontouchstart=c,document.querySelector('img').ondragstart=function(){return false},b()

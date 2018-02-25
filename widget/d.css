@@ -1,0 +1,1 @@
+body{-webkit-user-select:none;-webkit-tap-highlight-color:transparent;background:#eee;overflow:hidden}img{max-width:80vh;max-height:80vw;height:80vh;width:80vw;position:absolute;left:0;top:0;margin:auto;bottom:0;right:0}.a{animation:a 1s}@keyframes a{25%{transform:rotate(95deg)}50%{transform:rotate(180deg)}75%{transform:rotate(-95deg)}}
