@@ -6,7 +6,6 @@ Easily accessible online from any device.
 ## Links
 [Web](https://dice.ml) - The Website
 <br>[Chrome](https://goo.gl/knfd3k) - For Chrome
-<br>[Firefox](https://goo.gl/t9ETnw) - For Firefox
 
 ## Contributing
 For feedback, bug reports, or other reasons, open an issue at <https://git.io/vQ8OV>. I love to make my app better. Also, fork this repo and submit a pull request. I love teamwork.
