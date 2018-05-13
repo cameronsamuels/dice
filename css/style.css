@@ -21,9 +21,7 @@ img {
   margin: auto;
 }
 
-.a { animation: a 1s }
-
-@keyframes a {
+@keyframes roll {
   25% { transform: rotate(95deg) }
   50% { transform: rotate(180deg) }
   75% { transform: rotate(-95deg) }
