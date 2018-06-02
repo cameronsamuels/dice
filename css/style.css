@@ -3,7 +3,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: #eee;
+  background: #555;
   user-select: none;
   -webkit-user-select: none;
   overflow: hidden;
