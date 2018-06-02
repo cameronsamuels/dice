@@ -5,21 +5,40 @@ document.addEventListener("DOMContentLoaded", function() {
 
   function roll() {
     if (dice.style.animation) return;
+
+    var colors = [
+      "196, 143, 101",
+      "220, 76, 70",
+      "146, 181, 88",
+      "79, 132, 196",
+      "210, 105, 30",
+      "34, 58, 94",
+      "250, 179, 1",
+      "0, 89, 96",
+      "137, 142, 140",
+      "103, 46, 59"
+    ];
+    do {
+      var chosenColor = "rgb(" + colors[Math.floor(Math.random() * colors.length)] + ")";
+    } while (chosenColor == document.body.style.background);
+    document.body.style.background = chosenColor;
+
     dice.style.animation = "roll 1s";
     sound.play();
+
     setTimeout(function() {
       var number = Math.ceil(6 * Math.random());
       dice.style.animation = "";
       dice.src = "a/" + number + ".svg";
+      dice.alt = number;
     }, 1000);
   }
 
   document.addEventListener("keydown", roll);
-  document.addEventListener(navigator.userAgent.match(/iPhone|iPad/i) ? "touchstart" : "click", roll);
+  document.addEventListener("click", roll);
 
   sound.load();
 
-  var number = Math.ceil(6 * Math.random());
-  dice.src = "a/" + number + ".svg";
+  document.body.click();
 
 });

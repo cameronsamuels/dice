@@ -1,4 +1,8 @@
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   background: #eee;
   user-select: none;
   -webkit-user-select: none;
@@ -6,19 +10,14 @@ body {
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
+  transition: 1s background;
 }
 
 img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   width: 80vw;
   height: 80vh;
   max-width: 80vh;
   max-height: 80vw;
-  margin: auto;
 }
 
 @keyframes roll {
