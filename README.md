@@ -1,2 +1,4 @@
 [**Dice Thrower**](https://goo.gl/knfd3k) - Chrome Extension
-Dice Throwing app for Chrome
+<br>Dice Throwing app for Chrome
+
+Also available [online](https://git.io/vhWmz)
