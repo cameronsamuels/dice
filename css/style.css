@@ -3,6 +3,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin: 0;
   background: #555;
   user-select: none;
   -webkit-user-select: none;
