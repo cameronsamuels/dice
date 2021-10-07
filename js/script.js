@@ -15,7 +15,11 @@ document.addEventListener("DOMContentLoaded", function() {
   ];
 
   // role all dice
-  function roll() {
+  function roll(e) {
+    
+    let id = e.target.getAttribute("id");
+    if (id === "js-increase" || id === "js-decrease")
+      return;
     
     for (let i = 0; i < dice.length; i++) {
       let die = dice[i];
@@ -48,8 +52,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
     if (n > 9) n = 1;
     
-    for (let i = 0; i < dice.length; i++)
-      dice[i].remove();
+    container.innerHTML = "";
     dice = [];
     
     for (let i = 0; i < n; i++) {
@@ -75,6 +78,14 @@ document.addEventListener("DOMContentLoaded", function() {
     
   }
   
-  numDice(5);
+  document.querySelector("#js-increase").addEventListener("click", function() {
+    if (dice.length < 9)
+      numDice(dice.length + 1);
+  });
 
+  document.querySelector("#js-decrease").addEventListener("click", function() {
+    if (dice.length > 1)
+      numDice(dice.length - 1);
+  });
+  
 });
