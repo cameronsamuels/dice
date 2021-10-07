@@ -14,7 +14,7 @@ body {
   transition: 1s background;
 }
 
-div {
+body>div {
   text-align: center;
 }
 
@@ -27,4 +27,20 @@ img {
   25% { transform: rotate(95deg) }
   50% { transform: rotate(180deg) }
   75% { transform: rotate(-95deg) }
+}
+
+footer {
+  position: absolute;
+  bottom: 2vmin;
+  right: 2vmin;
+  padding: 2vmin;
+  border-radius: 2vmin;
+  font-size: 3vmin;
+  background: rgba(0,0,0,.5);
+  color: #fff;
+  text-align: center;
+}
+
+footer:hover {
+  background: rgba(0,0,0,.7);
 }
