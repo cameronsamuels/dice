@@ -30,7 +30,7 @@ img {
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 2vmin;
   right: 2vmin;
   padding: 1.5vmax 2vmax;
