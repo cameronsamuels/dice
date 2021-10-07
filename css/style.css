@@ -14,11 +14,13 @@ body {
   transition: 1s background;
 }
 
+div {
+  text-align: center;
+}
+
 img {
-  width: 80vw;
-  height: 80vh;
-  max-width: 80vh;
-  max-height: 80vw;
+  width: 80vmin;
+  height: 80vmin;
 }
 
 @keyframes roll {

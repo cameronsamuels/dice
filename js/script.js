@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-  var dice = document.querySelector("img");
+  var container = document.querySelector("div");
+  var dice = [document.querySelector("img")];
+  var nums = [2];
   var sound = new Audio("a/roll.mp3");
   var colors = [
     "255, 87, 34",
@@ -12,18 +14,22 @@ document.addEventListener("DOMContentLoaded", function() {
   ];
 
   function roll() {
-    if (dice.style.animation) return;
-    var number = Math.ceil(6 * Math.random());
-
-    dice.style.animation = "roll 1s";
-    sound.play();
-
-    setTimeout(function() {
-      dice.style.animation = "";
-      dice.src = "a/" + number + ".svg";
-      dice.alt = number;
-      document.body.style.background = "rgb(" + colors[number - 1] + ")";
-    }, 1000);
+    for (let i = 0; i < dice.length; i++) {
+      let die = dice[i];
+      
+      if (die.style.animation) return;
+      die.style.animation = "roll 1s";
+      sound.play();
+  
+      nums[i] = Math.ceil(6 * Math.random());
+      setTimeout(function() {
+        die.style.animation = "";
+        die.src = "a/" + nums[i] + ".svg";
+        die.alt = nums[i];
+      }, 1000);
+    }
+    let color = colors[Math.ceil(6 * Math.random()) - 1];
+    document.body.style.background = "rgb(" + color + ")";
   }
 
   document.addEventListener("keydown", roll);
