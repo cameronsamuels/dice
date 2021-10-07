@@ -33,9 +33,9 @@ footer {
   position: absolute;
   bottom: 2vmin;
   right: 2vmin;
-  padding: 2vmin;
-  border-radius: 2vmin;
-  font-size: 3vmin;
+  padding: 1.5vmax 2vmax;
+  border-radius: 2vmax;
+  font-size: 3vmax;
   background: rgba(0,0,0,.5);
   color: #fff;
   text-align: center;
@@ -43,4 +43,12 @@ footer {
 
 footer:hover {
   background: rgba(0,0,0,.7);
+}
+
+@media screen and (max-width: 500px) {
+  footer {
+    padding: 2vmax 3vmax;
+    border-radius: 3vmax;
+    font-size: 5vmax;
+  }
 }
