@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-  var dice = document.querySelector("img");
+  // initializations
+  var container = document.querySelector("div");
+  var dice = [document.querySelector("img")];
+  var nums = [2];
   var sound = new Audio("a/roll.mp3");
   var colors = [
     "255, 87, 34",
@@ -11,24 +14,90 @@ document.addEventListener("DOMContentLoaded", function() {
     "121, 85, 72"
   ];
 
-  function roll() {
-    if (dice.style.animation) return;
-    var number = Math.ceil(6 * Math.random());
-
-    dice.style.animation = "roll 1s";
-    sound.play();
-
-    setTimeout(function() {
-      dice.style.animation = "";
-      dice.src = "a/" + number + ".svg";
-      dice.alt = number;
-      document.body.style.background = "rgb(" + colors[number - 1] + ")";
-    }, 1000);
+  // roll all dice
+  function roll(e) {
+    
+    let id = e.target.getAttribute("id");
+    if (id === "js-increase" || id === "js-decrease" || id === "js-link")
+      return;
+    
+    for (let i = 0; i < dice.length; i++) {
+      let die = dice[i];
+      
+      if (die.style.animation) return;
+      die.style.animation = "roll 1s";
+      sound.play();
+  
+      nums[i] = Math.ceil(6 * Math.random());
+      setTimeout(function() {
+        die.style.animation = "";
+        die.src = "a/" + nums[i] + ".svg";
+        die.alt = nums[i];
+      }, 1000);
+    }
+    
+    let color = colors[Math.ceil(6 * Math.random()) - 1];
+    document.body.style.background = "rgb(" + color + ")";
+    
   }
 
   document.addEventListener("keydown", roll);
   document.addEventListener("click", roll);
 
   sound.load();
+
+  // alter number of dice
+  function numDice(n) {
+    
+    if (n > 9) n = 1;
+    
+    container.innerHTML = "";
+    dice = [];
+    
+    for (let i = 0; i < n; i++) {
+      
+      let die = document.createElement("img");
+      die.src = "a/2.svg";
+      container.appendChild(die);
+      dice.push(die);
+      
+      let two = n >= 2 && n <= 4;
+      let three = n == 5 || n == 6 || n == 9;
+      let four = n == 7 || n == 8;
+      let six = n == 9;
+      let breaks = [false, false, two, three, four, false, six];
+      if (breaks[i + 1])
+        container.appendChild(document.createElement("br"));
+        
+      let size = 256 / breaks.indexOf(true);
+      die.style.width = size + "px";
+      die.style.height = size + "px";
+        
+    }
+    
+  }
+
+  document.querySelector("#js-increase").addEventListener("click", function() {
+    if (dice.length < 9)
+      numDice(dice.length + 1);
+  });
+
+  document.querySelector("#js-decrease").addEventListener("click", function() {
+    if (dice.length > 1)
+      numDice(dice.length - 1);
+  });
+
+
+  // HTML Snippets - No CSS or JS is included in snippets (GET request for HTML)
+  if (window.navigator.onLine) {
+    function addSnippet(response) {
+      if (response.includes("dice-thrower-snippet"))
+        document.querySelector("#snippet").innerHTML = response;
+      else document.body.style.paddingBottom = "32px";
+    }
+    fetch("https://cameronsamuels.com/dice/snippet.html")
+      .then(response => response.text())
+      .then(response => addSnippet(response));
+  } else document.body.style.paddingBottom = "32px";
 
 });
